@@ -4,6 +4,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task.Manage</title>
@@ -22,27 +25,60 @@
     <div class="title">
         <div class="todo">
             <h1>To Do</h1>
-            <div class="cards">
+            <div class="container">
 
             </div>
         </div>
-        
-        <div class="verticalline"></div>
 
         <div class="progress">
             <h1>In Progress</h1>
-            
+            <div class="container">
+
+            </div>
         </div>
-        
-        <div class="verticalline"></div>
 
         <div class="done">
             <h1>Done</h1>
+            <div class="container">
+
+            </div>
         </div>
-   
+    </div>
+
+    <div class="addcard">
+        <div class="TaskName">
+            <h3>Task Name : </h3>
+            <input>
+        </div>
+        <div class="Deadline">
+            <h3>Deadline : </h3>
+            <input>
+        </div>
+        <div id="Priority">
+            <h3>Priority : </h3>
+            <div id="buttons">
+                <div id="btn1">
+                    <button style="background-color: #E6F0FA;"></button>
+                    <p>Low</p>
+                </div>
+                <div id="btn2">
+                    <button style="background-color: #BFDDF0;"></button>
+                    <p>Medium</p>
+                </div>
+                <div id="btn3">
+                    <button style="background-color: #8CC0EB;"></button>
+                    <p>High</p>
+                </div>
+            </div>
+        </div>
+        <div class="keybtn">
+            <button id="add">ADD</button>
+            <button id="cancel">CANCEL</button>
+        </div>
+        
     </div>
 
     <div id="blackscreen"></div>
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
