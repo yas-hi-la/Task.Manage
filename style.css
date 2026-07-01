@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Glory", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.navbar div{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: #161DA3;
+}
+
+#addtask{
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #161DA3;
+    color: white;
+}
+
+#addtask p{
+    font-size: 17px;
+    display: inline;
+    position: relative;
+    bottom: 5px;
+}
+
+#addtask img{
+    display: inline;
+    width: 24px;
+    height: 24px;
+}
+
+#addtask:hover{
+    cursor: pointer;
+}
+
+#mode{
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+}
+
+#mode:hover{
+    cursor: pointer;
+}
