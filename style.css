@@ -111,7 +111,7 @@ button:hover{
     display: none;
 }
 
-.addcard{
+#addcard{
     width: 450px;
     height: 400px;
     position: absolute;
@@ -128,7 +128,7 @@ button:hover{
     display: none;
 }
 
-.addcard h3{
+#addcard h3{
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 30px;
@@ -154,7 +154,7 @@ input{
     width: 230px;
     padding: 10px;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 #buttons{
@@ -191,4 +191,8 @@ input{
     background-color: #3475C9;
     border: none;
     border-radius: 10px;
+}
+
+#add p, #cancel p{
+    font-size: 18px;
 }
