@@ -7,6 +7,10 @@ var time = document.getElementById("Deadline")
 var buttons = document.querySelectorAll("#buttons button")
 var editingcard = null
 
+var progresscontainer = document.getElementById("second")
+var donecontainer = document.getElementById("third")
+var selected = null
+
 AddTaskButton.addEventListener("click",function(){
     AddCard.style.display = "block"
     BlackScreen.style.display = "block"
@@ -46,10 +50,14 @@ Add.addEventListener("click", function(){
     else{
     var dv = document.createElement("div")
     dv.classList.add("cards")
+    dv.draggable = true
+    dv.addEventListener("dragstart", function(){
+        selected = this
+    })
     dv.innerHTML = `<h1>${taskname.value}</h1>
                     <h2>${time.value}</h2>
-                    <button class="edit" onclick="edit(this)"><img src="edit.png"></button>
-                    <button class="del" onclick="del(this)"><img src="del.png"></button>`
+                    <button class="edit" onclick="edit(this)" draggable = "false"><img src="edit.png"></button>
+                    <button class="del" onclick="del(this)" draggable = "false"><img src="del.png"></button>`
     dv.style.backgroundColor = bg
     todocontainer.append(dv)
     
@@ -87,3 +95,16 @@ function edit(target){
 
     Add.querySelector("p").textContent = "SAVE"
 }
+
+    var containers = [todocontainer,progresscontainer,donecontainer]
+
+    containers.forEach(container => {
+        container.addEventListener("dragover", function(e){
+        e.preventDefault()
+    })
+    container.addEventListener("drop", function(e){
+        e.preventDefault()
+        container.appendChild(selected)
+    })
+    })
+    
