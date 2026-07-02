@@ -115,6 +115,7 @@ button:hover{
     font-size: 30px;
     color: black;
     text-decoration: underline;
+    padding: 5px;
 }
 
 .cards h2{
@@ -122,20 +123,29 @@ button:hover{
     color: black;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    padding: 5px;
 }
 
-.cards button{
-    width: 50px;
-    height: 25px;
-    background-color: #3475C9;
+.edit{
+    background: none;
     border: none;
-    border-radius: 10px;
+    position: relative;
+    left: 35%;
+    bottom: 45%;
+    display: none;
 }
 
-#edit{
+.del{
+    background: none;
+    border: none;
     position: relative;
-    top: 20px;
-    right: 20px;
+    left: 35%;
+    top: 20%;
+    display: none;
+}
+
+.cards:hover .edit, .cards:hover .del{
+    display: block;
 }
 
 #blackscreen{

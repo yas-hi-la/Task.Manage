@@ -40,8 +40,20 @@ Add.addEventListener("click", function(){
     dv.classList.add("cards")
     dv.innerHTML = `<h1>${taskname.value}</h1>
                     <h2>${time.value}</h2>
-                    <button><p>Delete</p></button>
-                    <button id="edit"><p>Edit</p></button>`
+                    <button class="edit"><img src="edit.png"></button>
+                    <button class="del"><img src="del.png"></button>`
     dv.style.backgroundColor = bg
     todocontainer.append(dv)
+
+    AddCard.style.display = "none"
+    BlackScreen.style.display = "none"
+
+    taskname.value = ""
+    time.value = ""
+    buttons.forEach(button => {
+        button.classList.remove("selected")
+    })
 })
+
+var edit = document.querySelectorAll(".edit")
+var del = document.querySelectorAll(".del")
