@@ -19,42 +19,44 @@
             <button id="addtask"><img src="ic_round-plus.png"> <p>Add Task</p></button>
             <button  id="mode"><img src="solar_sun-bold.png"></button>
         </div>
-        </div>
-        <hr style="border: 0.5px solid #5450CE;">
-    
+    </div>
+    <hr style="border: 0.5px solid #5450CE;">
+
     <div class="title">
         <div class="todo">
             <h1>To Do</h1>
-            <div class="container">
+            <div id="first">
 
             </div>
         </div>
 
         <div class="progress">
             <h1>In Progress</h1>
-            <div class="container">
+            <div id="second">
 
             </div>
         </div>
 
         <div class="done">
             <h1>Done</h1>
-            <div class="container">
+            <div id="third">
 
             </div>
         </div>
     </div>
 
+    <div id="blackscreen"></div>
+
     <div id="addcard">
-        <div class="TaskName">
+        <div style="display: flex;">
             <h3>Task Name : </h3>
-            <input>
+            <input id="TaskName">
         </div>
-        <div class="Deadline">
+        <div style="display: flex;">
             <h3>Deadline : </h3>
-            <input>
+            <input id="Deadline">
         </div>
-        <div id="Priority">
+        <div style="display: flex;">
             <h3>Priority : </h3>
             <div id="buttons">
                 <div id="btn1">
@@ -72,13 +74,11 @@
             </div>
         </div>
         <div class="keybtn">
-            <button id="add"><p>ADD</p></button>
-            <button id="cancel"><p>CANCEL</p></button>
+            <button id="add"><p style="font-size: 18px;">ADD</p></button>
+            <button id="cancel"><p style="font-size: 18px;">CANCEL</p></button>
         </div>
-        
     </div>
 
-    <div id="blackscreen"></div>
     <script src="script.js"></script>
 </body>
 </html>

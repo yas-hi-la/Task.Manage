@@ -68,6 +68,7 @@ button:hover{
     top: 4px;
 }
 
+
 .title{
     display: flex;
     margin-top: 42px;
@@ -84,7 +85,7 @@ button:hover{
 
 .todo, .progress, .done{
     text-align: center;
-    flex: 1;
+    flex-grow: 1;
     min-height: 70vh;
     border-right: 1px solid #5450CE;
 }
@@ -93,10 +94,48 @@ button:hover{
     border: none;
 }
 
-.cards{
+#first, #second, #third{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cards{
+    width: 310px;
+    height: 310px;
+    margin-top: 42px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards h1{
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.cards h2{
+    font-size: 25px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.cards button{
+    width: 50px;
+    height: 25px;
+    background-color: #3475C9;
+    border: none;
+    border-radius: 10px;
+}
+
+#edit{
+    position: relative;
+    top: 20px;
+    right: 20px;
 }
 
 #blackscreen{
@@ -140,10 +179,6 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.TaskName, .Deadline, #Priority{
-    display: flex;
-}
-
 input{
     margin: 18px;
     position: relative;
@@ -171,6 +206,10 @@ input{
     border: 1px solid black;
 }
 
+#buttons button.selected{
+    border: 3px solid #161DA3;
+}
+
 #buttons p{
     padding: 8px;
     font-size: 18px;
@@ -191,8 +230,4 @@ input{
     background-color: #3475C9;
     border: none;
     border-radius: 10px;
-}
-
-#add p, #cancel p{
-    font-size: 18px;
 }
