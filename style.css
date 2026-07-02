@@ -85,7 +85,7 @@ button:hover{
 
 .todo, .progress, .done{
     text-align: center;
-    flex-grow: 1;
+    flex: 1;
     min-height: 70vh;
     border-right: 1px solid #5450CE;
 }
