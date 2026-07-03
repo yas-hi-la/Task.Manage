@@ -68,7 +68,9 @@ button:hover{
     top: 4px;
 }
 
-
+hr{
+    border: 0.5px solid #5450CE
+}
 .title{
     display: flex;
     margin-top: 42px;
@@ -190,6 +192,18 @@ button:hover{
     margin-bottom: 10px;
 }
 
+#btn1 button{
+    background-color: #E6F0FA
+}
+
+#btn2 button{
+    background-color: #BFDDF0
+}
+
+#btn3 button{
+    background-color: #8CC0EB
+}
+
 input{
     margin: 18px;
     position: relative;
@@ -241,4 +255,65 @@ input{
     background-color: #3475C9;
     border: none;
     border-radius: 10px;
+}
+
+body.dark{
+    background-color: black;
+}
+
+div.dark h1{
+    color: #3475C9;
+}
+
+#addtask.dark{
+    background-color: #3475C9;
+    color: black;
+}
+
+hr.dark{
+    border:0.5px solid #839CD4;
+}
+
+.dark .todo, .dark.progress{
+    border-right: 1px solid #839CD4;
+}
+
+#blackscreen.dark{
+    opacity: 0.72;
+}
+
+#addcard.dark{
+    background-color: #0B6FCD;
+    opacity: 0.95;
+}
+
+#addcard.dark h3{
+    color: white;
+}
+
+#addcard.dark input{
+    border-bottom: 1px solid white;
+}
+
+#btn1.dark button{
+    background-color: #4BB8FA;
+    border: 1px solid white;
+}
+
+#btn2.dark button{
+    background-color: #1591DC;
+    border: 1px solid white;
+}
+
+#btn3.dark button{
+    background-color: #2C5EAD;
+    border: 1px solid white;
+}
+
+#btn1.dark, #btn2.dark, #btn3.dark p{
+    color: white;
+}
+#add.dark, #cancel.dark{
+    background-color: #161DA3;
+    color: white;
 }

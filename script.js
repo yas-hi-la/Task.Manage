@@ -28,13 +28,13 @@ Cancel.addEventListener("click",function(){
     })
 })
 
-var bg = ""
+var bg = null
 function highlight(target){
     buttons.forEach(button => {
         button.classList.remove("selected")
     })
     target.classList.add("selected")
-    bg = target.style.backgroundColor
+    bg = getComputedStyle(target).backgroundColor
 }
 
 var Add = document.getElementById("add")
@@ -60,8 +60,6 @@ Add.addEventListener("click", function(){
                     <button class="del" onclick="del(this)" draggable = "false"><img src="del.png"></button>`
     dv.style.backgroundColor = bg
     todocontainer.append(dv)
-    
-    
     }
     taskname.value = ""
     time.value = ""
@@ -107,4 +105,3 @@ function edit(target){
         container.appendChild(selected)
     })
     })
-    
