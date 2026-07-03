@@ -326,6 +326,6 @@ hr.dark{
     color: white;
 }
 
-#buttons button.selected.dark{
+#buttons button.dark.selected{
     border: 3px solid #3475C9;
 }
