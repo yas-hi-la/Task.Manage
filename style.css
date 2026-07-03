@@ -261,7 +261,7 @@ body.dark{
     background-color: black;
 }
 
-div.dark h1{
+.navbar.dark h1{
     color: #3475C9;
 }
 
@@ -274,8 +274,12 @@ hr.dark{
     border:0.5px solid #839CD4;
 }
 
-.dark .todo, .dark.progress{
+.dark.todo, .dark.progress{
     border-right: 1px solid #839CD4;
+}
+
+.dark.todo h1, .dark.progress h1, .dark.done h1{
+    color: #3475C9;
 }
 
 #blackscreen.dark{
@@ -316,4 +320,12 @@ hr.dark{
 #add.dark, #cancel.dark{
     background-color: #161DA3;
     color: white;
+}
+
+.cards.dark h1, .cards.dark h2{
+    color: white;
+}
+
+#buttons button.selected.dark{
+    border: 3px solid #3475C9;
 }
